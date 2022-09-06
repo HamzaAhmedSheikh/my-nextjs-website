@@ -5,19 +5,19 @@ import { Document } from "@contentful/rich-text-types";
 
 export interface IArticleFields {
   /** Title */
-  title?: string | undefined;
+  title?: string;
 
   /** Slug */
-  slug?: string | undefined;
+  slug?: string;
 
   /** Description */
-  description?: string | undefined;
+  description?: string;
 
   /** Publish date */
-  publishDate?: string | undefined;
+  publishDate?: string;
 
   /** Content */
-  content?: Document | undefined;
+  content?: Document;
 }
 
 /** This article is for my next-js website. */
@@ -41,22 +41,22 @@ export interface IArticle extends Entry<IArticleFields> {
 
 export interface IBlogPostFields {
   /** Title */
-  title?: string | undefined;
+  title?: string;
 
   /** Slug */
-  slug?: string | undefined;
+  slug?: string;
 
   /** Excerpt */
-  excerpt?: string | undefined;
+  excerpt?: string;
 
   /** Published date */
-  publishedDate?: string | undefined;
+  publishedDate?: string;
 
   /** Featured image */
-  featuredImage?: Asset | undefined;
+  featuredImage?: Asset;
 
   /** Body */
-  body?: Document | undefined;
+  body?: Document;
 }
 
 export interface IBlogPost extends Entry<IBlogPostFields> {
