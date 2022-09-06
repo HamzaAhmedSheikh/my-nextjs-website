@@ -7,7 +7,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "generate:types": "contentful-typescript-codegen --output src/@types/contentful.d.ts"
+    "generate:types": "contentful-typescript-codegen --output src/@types/contentful.d.ts",
+    "build:prod": "npm run generate:types && next build && next export"
   },
   "dependencies": {
     "axios": "^0.27.2",
