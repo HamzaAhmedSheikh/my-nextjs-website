@@ -1,0 +1,33 @@
+{
+  "name": "ssr-rest-api",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "generate:types": "contentful-typescript-codegen --output src/@types/contentful.d.ts"
+  },
+  "dependencies": {
+    "axios": "^0.27.2",
+    "next": "12.2.5",
+    "react": "18.2.0",
+    "react-dom": "18.2.0"
+  },
+  "devDependencies": {
+    "@contentful/rich-text-react-renderer": "^15.12.1",
+    "@types/axios": "^0.14.0",
+    "@types/node": "18.7.11",
+    "@types/react": "18.0.17",
+    "@types/react-dom": "18.0.6",
+    "contentful": "^9.1.34",
+    "contentful-management": "^10.12.1",
+    "contentful-typescript-codegen": "^3.2.3",
+    "dotenv": "^16.0.2",
+    "eslint": "8.22.0",
+    "eslint-config-next": "12.2.5",
+    "prettier": "^2.7.1",
+    "typescript": "4.7.4"
+  }
+}
