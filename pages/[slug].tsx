@@ -9,23 +9,21 @@ interface Props {
   article: IArticleFields;
 }
 
-const Article: NextPage<Props> = ({
-  article: { title, description, publishDate, content },
-}) => (
+const Article: NextPage<Props> = ({ article }: any) => (
   <div className={styles.container}>
     <Head>
-      <title>{title} | My awesome Harry Potter blog</title>
-      <meta name="description" content={description} />
+      <title>{article.title} | My awesome Harry Potter blog</title>
+      <meta name="description" content={article.description} />
     </Head>
 
     <main className={styles.main}>
-      <h1 className={styles.title}>{title}</h1>
-      <p className={styles.description}>{description}</p>
-      <time dateTime={publishDate} className={styles.publishDate}>
-        Published on {publishDate}
+      <h1 className={styles.title}>{article.title}</h1>
+      <p className={styles.description}>{article.description}</p>
+      <time dateTime={article.publishDate} className={styles.publishDate}>
+        Published on {article.publishDate}
       </time>
 
-      <div className={styles.article}>{documentToReactComponents(content)}</div>
+      <div className={styles.article}>{documentToReactComponents(article.content)}</div>
     </main>
   </div>
 );
